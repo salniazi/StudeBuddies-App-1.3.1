@@ -1,0 +1,30 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Defines.h"
+    #import "MBProgressHUD.h"
+    #import "Connection.h"
+    #import "Utils.h"
+    #import "AppDelegate.h"
+    #import <FacebookSDK/FacebookSDK.h>
+    #import "TATweetHelper.h"
+    #import "UIImageView+AFNetworking.h"
+    #import "Categories.h"
+    #import "PHTextView.h"
+    #import "UIImage+ImageEffects.h"
+    #import "UIImage+ResizeMagick.h"
+    #import "InstagramClient.h"
+
+#endif

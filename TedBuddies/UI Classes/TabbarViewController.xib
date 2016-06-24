@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tabBarController definesPresentationContext="YES" id="Bwg-Tw-xO8">
+            <nil key="simulatedBottomBarMetrics"/>
+            <tabBar key="tabBar" contentMode="scaleToFill" selectedItem="qaN-r0-zuB" id="xhK-hm-0t6">
+                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </tabBar>
+            <viewControllers>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="qU3-BS-TdM">
+                    <tabBarItem key="tabBarItem" title="Yap" id="bML-hi-IGb">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="-1" vertical="-3"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aFd-uO-FdL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="PostViewController" id="k00-Rl-G0z" customClass="PostViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="15I-2k-Hct"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Ees-vi-yRm">
+                    <tabBarItem key="tabBarItem" title="Buddies" id="6SU-p9-SOG">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Ak-qJ-AmA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="BuddyGridController" id="mEb-vk-UK3" customClass="BuddyGridController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="Zd5-bM-DxB"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController title="Messages" definesPresentationContext="YES" navigationBarHidden="YES" id="HES-CG-kmE">
+                    <tabBarItem key="tabBarItem" title="Messages" id="4c7-K6-1xF">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g9J-pC-SLs">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController title="Messages" nibName="MessagesViewController" id="qg6-3Z-Isn" customClass="MessagesViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="T5S-zF-MJt"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Zno-1m-6F2">
+                    <tabBarItem key="tabBarItem" title="Marketplace" id="E8Z-HH-dxi">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xtq-KU-vHr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="MarketPlaceViewController" id="CKG-Iz-zeU" customClass="MarketPlaceViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="y9n-Ap-w0i"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+                <navigationController title="Notification" definesPresentationContext="YES" navigationBarHidden="YES" id="VdY-aA-zPY">
+                    <tabBarItem key="tabBarItem" title="Notification" id="qaN-r0-zuB">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fPA-be-PXX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController title="Notification" nibName="PendingRequestsViewController" id="IWU-SA-f9K" customClass="PendingRequestsViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="TvG-ao-69S"/>
+                        </viewController>
+                    </viewControllers>
+                </navigationController>
+            </viewControllers>
+        </tabBarController>
+    </objects>
+</document>

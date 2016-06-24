@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateProfileViewController">
+            <connections>
+                <outlet property="barButtonToolBar" destination="4PZ-sv-vRB" id="RDt-j9-Joh"/>
+                <outlet property="btnClassSchedule" destination="qnY-PH-eFh" id="PKa-Vf-UyX"/>
+                <outlet property="btnCreateProfile" destination="Vac-77-5Eb" id="O97-2L-DYF"/>
+                <outlet property="btnRemoveImage" destination="vA4-Un-ru3" id="AoT-eh-cly"/>
+                <outlet property="btnShowYear" destination="yqh-RZ-kmx" id="beB-xF-bsk"/>
+                <outlet property="btnUploadPic" destination="CuZ-qm-oVi" id="Hed-7S-MP4"/>
+                <outlet property="datePicker" destination="GxO-Hd-Wml" id="nMj-y4-CpK"/>
+                <outlet property="imgArrow" destination="p1V-vb-idw" id="uF4-JV-W8j"/>
+                <outlet property="imgCoverBlurImage" destination="6W6-oQ-mXQ" id="5b0-hL-LUh"/>
+                <outlet property="imgProfilePic" destination="70n-ph-1br" id="V2u-Q1-y2C"/>
+                <outlet property="lblClassSchedule" destination="vZ1-Fp-7d7" id="S3X-1c-yTK"/>
+                <outlet property="pageControlImages" destination="PGt-Ze-XDf" id="pMP-Pv-dHO"/>
+                <outlet property="scrlViewMain" destination="GLg-jg-LID" id="dff-2N-lqE"/>
+                <outlet property="scrlViewProfileImages" destination="yaH-3r-bqF" id="Oon-qz-VyL"/>
+                <outlet property="tblCollegeYear" destination="g9w-y9-Up3" id="aQm-WZ-o6d"/>
+                <outlet property="tblViewMajor" destination="G8O-Ya-2Sf" id="TZb-nb-kBD"/>
+                <outlet property="tblViewUniversity" destination="121-VR-My6" id="nu1-yI-qKl"/>
+                <outlet property="toolBarPicker" destination="mAj-0x-hBQ" id="gKj-mb-a4y"/>
+                <outlet property="txtFieldCollege" destination="do8-CR-fwH" id="Rx0-yc-xMO"/>
+                <outlet property="txtFieldDegree" destination="XEY-zm-2Qi" id="jB1-g7-pgY"/>
+                <outlet property="txtFieldDob" destination="EHX-v1-QRA" id="dBJ-gD-apk"/>
+                <outlet property="txtFieldName" destination="07C-Vp-QKh" id="8pz-fk-DHy"/>
+                <outlet property="txtFieldUniversity" destination="1qJ-ep-Epj" id="d2s-4A-k6C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="mhd-FV-iPv">
+                    <rect key="frame" x="40" y="220" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="GLg-jg-LID">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" id="U7y-0z-oty">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6W6-oQ-mXQ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="user_profile.png" id="70n-ph-1br">
+                            <rect key="frame" x="110" y="53" width="99" height="96"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="yaH-3r-bqF">
+                            <rect key="frame" x="110" y="52" width="98" height="98"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Whh-Ku-ycf"/>
+                            </connections>
+                        </scrollView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CuZ-qm-oVi">
+                            <rect key="frame" x="179" y="118" width="31" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="add-1">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnUploadImageTapped:" destination="-1" eventType="touchUpInside" id="dgJ-lN-EN8"/>
+                            </connections>
+                        </button>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="username_bg.png" id="Ga6-Ax-5PE">
+                            <rect key="frame" x="17" y="174" width="286" height="42"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="username_bg.png" id="V5t-ha-Xjv">
+                            <rect key="frame" x="17" y="225" width="286" height="42"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="username_bg.png" id="kbi-jj-CPH">
+                            <rect key="frame" x="17" y="276" width="286" height="42"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="username_bg.png" id="q2F-Fk-KgF">
+                            <rect key="frame" x="17" y="327" width="286" height="42"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" id="07C-Vp-QKh">
+                            <rect key="frame" x="36" y="176" width="228" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.058823529409999999" green="0.45882352939999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="I5v-bW-Kjj"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date of Birth" minimumFontSize="17" id="EHX-v1-QRA">
+                            <rect key="frame" x="36" y="227" width="228" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.058823529409999999" green="0.45882352939999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="FJF-wf-Tsz"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select University" minimumFontSize="17" id="1qJ-ep-Epj">
+                            <rect key="frame" x="36" y="278" width="228" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.058823529409999999" green="0.45882352939999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="5z7-mL-OyQ"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select or Enter Major" minimumFontSize="17" id="XEY-zm-2Qi">
+                            <rect key="frame" x="36" y="329" width="228" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.058823529409999999" green="0.45882352939999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="JVA-Yo-JAO"/>
+                            </connections>
+                        </textField>
+                        <textField hidden="YES" opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year of College" minimumFontSize="17" id="do8-CR-fwH">
+                            <rect key="frame" x="36" y="1380" width="228" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.058823529409999999" green="0.45882352939999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="yKb-4i-cHA"/>
+                            </connections>
+                        </textField>
+                        <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yqh-RZ-kmx">
+                            <rect key="frame" x="18" y="1225" width="283" height="42"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnShowYearTapped:" destination="-1" eventType="touchUpInside" id="Ox4-cC-we5"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a screenshot of your class schedule" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vZ1-Fp-7d7">
+                            <rect key="frame" x="20" y="1378" width="280" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N8z-3P-OpA">
+                            <rect key="frame" x="18" y="1378" width="283" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnScheduleClassTapped:" destination="-1" eventType="touchUpInside" id="TYj-30-Hco"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vac-77-5Eb">
+                            <rect key="frame" x="17" y="445" width="286" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Create Profile" backgroundImage="sign_in_btn.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCreateProfileTapped:" destination="-1" eventType="touchUpInside" id="ygH-uW-WXa"/>
+                            </connections>
+                        </button>
+                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="p1V-vb-idw">
+                            <rect key="frame" x="280" y="441" width="10" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qnY-PH-eFh">
+                            <rect key="frame" x="85" y="390" width="150" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.46666666666666667" green="0.74509803921568629" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Class Schedule">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnScheduleTapped:" destination="-1" eventType="touchUpInside" id="kmc-v7-nsl"/>
+                            </connections>
+                        </button>
+                        <tableView hidden="YES" clipsSubviews="YES" tag="21" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="22" sectionFooterHeight="22" id="121-VR-My6">
+                            <rect key="frame" x="17" y="320" width="286" height="100"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="zWU-2n-zf6"/>
+                                <outlet property="delegate" destination="-1" id="OM2-V4-34j"/>
+                            </connections>
+                        </tableView>
+                        <tableView hidden="YES" clipsSubviews="YES" tag="22" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="22" sectionFooterHeight="22" id="G8O-Ya-2Sf">
+                            <rect key="frame" x="17" y="370" width="286" height="100"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="hQM-d9-jfX"/>
+                                <outlet property="delegate" destination="-1" id="Enq-b5-tre"/>
+                            </connections>
+                        </tableView>
+                        <tableView hidden="YES" clipsSubviews="YES" alpha="0.0" tag="23" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="22" sectionFooterHeight="22" id="g9w-y9-Up3">
+                            <rect key="frame" x="16" y="1418" width="288" height="150"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Wyd-tb-kHM"/>
+                                <outlet property="delegate" destination="-1" id="H9W-sD-fbL"/>
+                            </connections>
+                        </tableView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="PGt-Ze-XDf">
+                            <rect key="frame" x="140" y="149" width="39" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </pageControl>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vA4-Un-ru3">
+                            <rect key="frame" x="279" y="10" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <state key="normal" image="cancelBtnWorkoutPartners.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnRemoveImageTapped:" destination="-1" eventType="touchUpInside" id="Gae-8N-4bz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.98039221759999995" green="0.2196078598" blue="0.015686275440000001" alpha="1" colorSpace="deviceRGB"/>
+            <point key="canvasLocation" x="287" y="178"/>
+        </view>
+        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" id="GxO-Hd-Wml">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <date key="date" timeIntervalSinceReferenceDate="-1597937937.482903">
+                <!--1950-05-14 08:21:02 +0000-->
+            </date>
+            <connections>
+                <action selector="pickerDateChanged:" destination="-1" eventType="valueChanged" id="HdA-LK-S0g"/>
+            </connections>
+        </datePicker>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="mAj-0x-hBQ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="p1Z-Zz-o9m"/>
+                <barButtonItem title="Done" id="4PZ-sv-vRB">
+                    <connections>
+                        <action selector="pickerDoneTapped:" destination="-1" id="Adm-w8-Lz3"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+        </toolbar>
+    </objects>
+    <resources>
+        <image name="add-1" width="40" height="40"/>
+        <image name="bg1" width="319" height="480"/>
+        <image name="cancelBtnWorkoutPartners.png" width="24" height="24"/>
+        <image name="sign_in_btn.png" width="286" height="40"/>
+        <image name="user_profile.png" width="99" height="96"/>
+        <image name="username_bg.png" width="286" height="42"/>
+    </resources>
+</document>
